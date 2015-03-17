@@ -3,3 +3,5 @@ node_modules
 .picasa.ini
 .picasaoriginals
 .sass-cache
+build
+_public
