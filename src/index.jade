@@ -1,0 +1,69 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="icon", sizes="16x16 32x32", href="favicon.ico?v=2")
+    title JSDC 2015
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="stylesheets/style.css")
+
+  body
+    include views/includes/nav.jade
+    #main
+      section.landing.cd-intro
+        .logo
+          img(src="images/logo.png", alt="JSDC")
+        h1.tagline.cd-headline.letters.type
+          span Build 
+          span.cd-words-wrapper.waiting
+            b.is-visible Anything
+            b Website
+            b Webapp
+            b Mobile App
+            b Arduino
+            b Raspberry Pi
+            b Robot
+          span with JavaScript
+        .activity
+          a.typeform-share.button(href="https://vantischen.typeform.com/to/Du4zfx", data-mode="1", target="_blank")
+            | I could build "something" with JavaScript
+      section.intro
+        .container-box
+          h1.title What's JSDC
+          .divider
+          p.info
+            | This year, JSDC is breaking the barriers by integrating the technical power from 
+            | independent developers, enterprises, framewords, architectures, and practices. 
+            | We aim to make the knowledge globally interchangeable, while makeing all attendees 
+            | reimagine JavaScript within and beyond the dogma. Our new thinking will be a catalyst 
+            | for further improvement of the architectures. fortification of the teams, and optimization 
+            | of the development process.
+          a.contact(href="mailto:hq@jsdc.tw?subject=I wanna build something here&body=Hi, I have some ideas.")
+            | hq@jsdc.tw
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
+    script(src="scripts/app.min.js")
+    script.
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = 'typef_orm',
+        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+      if (!gi.call(d, id)) {
+        js = ce.call(d, 'script');
+        js.id = id;
+        js.src = b + 'share.js';
+        q = gt.call(d, 'script')[0];
+        q.parentNode.insertBefore(js, q)
+      }
+      id = id + '_';
+      if (!gi.call(d, id)) {
+        qs = ce.call(d, 'link');
+        qs.rel = 'stylesheet';
+        qs.id = id;
+        qs.href = b + 'share-button.css';
+        s = gt.call(d, 'head')[0];
+        s.appendChild(qs, s)
+      }
