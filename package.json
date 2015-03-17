@@ -1,0 +1,35 @@
+{
+  "name": "jsdc2015",
+  "version": "0.0.1",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsdc-core/jsdc2015.github.io.git"
+  },
+  "author": "jsdc-core",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsdc-core/jsdc2015.github.io/issues"
+  },
+  "homepage": "https://github.com/jsdc-core/jsdc2015.github.io",
+  "devDependencies": {
+    "browser-sync": "^2.2.5",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-changed": "^1.2.1",
+    "gulp-compass": "^2.0.3",
+    "gulp-concat": "^2.5.2",
+    "gulp-jade": "^1.0.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-plumber": "^1.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1"
+  }
+}

@@ -80,7 +80,7 @@ gulp.task('compass', function() {
     .pipe(compass({
       css: 'build/stylesheets',
       sass: 'src/sass',
-      require: ['susy'],
+      require: ['susy', 'breakpoint'],
     })).on('error', function(err) {
       gutil.log(gutil.colors.yellow(err.message));
       browserSync.notify(err.message, 5000);
