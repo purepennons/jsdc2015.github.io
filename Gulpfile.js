@@ -101,7 +101,7 @@ gulp.task('lint', function() {
     .pipe(jshint())
     .pipe(jshint.reporter(stylish))
     .pipe(concat('app.js'))
-    .pipe(rename({ suffix: '.min' }))
+    // .pipe(rename({ suffix: '.min' }))
     .pipe(uglify({ compress: true }))
     .pipe(sourcemaps.write({
       addComment: true,
