@@ -16,22 +16,26 @@ html
           li
             a(href="/zh_tw") 中文
       section.landing.cd-intro
-        .logo
-          img(src="../images/logo.png", alt="JSDC")
-        h1.tagline.cd-headline.letters.type
-          span Build 
-          span.cd-words-wrapper.waiting
-            b.is-visible Anything
-            b Website
-            b Webapp
-            b Mobile App
-            b Arduino
-            b Raspberry Pi
-            b Robot
-          span  with JavaScript
-        .activity
-          a.typeform-share.button(href="https://vantischen.typeform.com/to/Du4zfx", data-mode="1", target="_blank")
-            | I could build "something" with JavaScript
+        .video
+          video(src="../video/background.mp4", autoplay="", muted="", loop="")
+        //- iframe.video(width="100%", src="https://www.youtube.com/embed/fFvj1NELjOQ?autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=fFvj1NELjOQ", frameborder="0", allowfullscreen="")
+        .background-container
+          .logo
+            img(src="../images/logo.png", alt="JSDC")
+          h1.tagline.cd-headline.letters.type
+            span Build 
+            span.cd-words-wrapper.waiting
+              b.is-visible Anything
+              b Website
+              b Webapp
+              b Mobile App
+              b Arduino
+              b Raspberry Pi
+              b Robot
+            span  with JavaScript
+          .activity
+            a.typeform-share.button(href="https://vantischen.typeform.com/to/Du4zfx", data-mode="1", target="_blank")
+              | I could build "something" with JavaScript
       section.intro
         .container-box
           h1.title What's JSDC
