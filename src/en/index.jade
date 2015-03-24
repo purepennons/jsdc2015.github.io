@@ -1,27 +1,23 @@
 doctype html
 html
-  head
+  head(lang="en")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
     link(rel="icon", sizes="16x16 32x32", href="favicon.ico?v=2")
     title JSDC 2015
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
-    link(rel="stylesheet", href="stylesheets/style.css")
-    script.
-      (function () {
-        var lang = navigator.language.slice(0, 2);
-        if (lang === 'zh') 
-          location.replace('/zh_tw');
-        else 
-          location.replace('/en');
-      }) ();
+    link(rel="stylesheet", href="../stylesheets/style.css")
 
-  //- body
+  body
     //- include views/includes/nav.jade
     #main
+      header
+        ul.languages
+          li
+            a(href="/zh_tw") 中文
       section.landing.cd-intro
         .logo
-          img(src="images/logo.png", alt="JSDC")
+          img(src="../images/logo.png", alt="JSDC")
         h1.tagline.cd-headline.letters.type
           span Build 
           span.cd-words-wrapper.waiting
@@ -51,7 +47,7 @@ html
             | hq@jsdc.tw
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
-    script(src="scripts/app.js")
+    script(src="../scripts/app.js")
     script.
       var qs, js, q, s, d = document,
         gi = d.getElementById,
