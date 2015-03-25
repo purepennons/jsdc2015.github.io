@@ -44,13 +44,15 @@
     +display-flex
     +justify-content(center)
     a
-      background: #57585a
-      color: #f1f1f1
-      border: none
-      font-family: $font3
-      padding: 5px 10px
-      &:hover
-        background: lighten(#57585a, 15%)
+      // background: #57585a
+      // text-decoration: none
+      // color: #f1f1f1
+      // border: none
+      // font-family: $font3
+      // padding: 5px 10px
+      // margin: 0 10px
+      // &:hover
+      //   background: lighten(#57585a, 15%)
 
 .intro
   // height: 35vh
@@ -73,6 +75,23 @@
     color: #8f8f8f
     margin: 50px 20px
     // font-weight: bold
-  .contact
-    color: #03cef7
-    font-weight: bold
+
+a.typeform-share
+  text-decoration: none
+  color: #f1f1f1
+  border: none
+  font-family: $font3
+  padding: 5px 10px
+  margin: 0 10px
+  &.speaker
+    background-color: $logo-blue
+    &:hover
+      background-color: lighten($logo-blue, 15%)
+  &.sponsor
+    background-color: $logo-red
+    &:hover
+      background-color: lighten($logo-red, 15%)
+  &.contact
+    background-color: $logo-green
+    &:hover
+      background-color: lighten($logo-green, 15%)
