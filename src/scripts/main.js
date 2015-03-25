@@ -182,4 +182,9 @@ $(document).ready(function() {
   };
 
   initHeadline();
+
+  var video = document.getElementsByTagName('video')[0];
+  document.body.addEventListener('touchstart',function(){
+    video.play();
+  }, false);
 });
