@@ -282,8 +282,51 @@ $(document).ready(function() {
 
   $(window).resize(function (event) {
     initNavbar();
-    console.log(event);
+    // console.log(event);
   });
 
   initNavbar();
+
+  var initNewsBlock = function (element) {
+    element.slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      adaptiveHeight: true,
+      // variableWidth: true,
+      responsive: [{
+        breakpoint: 770,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }]
+    });
+  };
+
+  initNewsBlock($('.news-slick'));
+
+  // Scroll to div event
+  var initScrollEvent = function (clickEl, toEl) {
+    $(clickEl).on('click', function (event) {
+      $(toEl).velocity('scroll', {
+        scrollTop: toEl.offset().top - 100,
+        duration: 1000
+      });
+    });
+  };
+
+  initScrollEvent($('.nav-news'), $('section.news'));
 });

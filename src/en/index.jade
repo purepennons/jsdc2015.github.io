@@ -6,6 +6,8 @@ html
     link(rel="icon", sizes="16x16 32x32", href="../favicon.ico?v=2")
     title JSDC 2015
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css")
     link(rel="stylesheet", href="../stylesheets/style.css")
     
     // Open Graph data
@@ -55,7 +57,28 @@ html
               | Be a sponsor
         include navbar.jade
       section.news
-
+        .container
+          .news-slick
+            a.post(href="http://blog.jsdc.tw/2015/04/01/jsdc2015-start/")
+              h2.title JSDC 2015, now starting.
+              span.author By JSDC team at 01 Apr 2015
+              p.description 
+            a.post(href="http://blog.jsdc.tw/2014/10/14/jsdc2014-day2/", target="_blank")
+              h2.title JSDC 2014 次日講者訪談: 樂趣、嘗試、目標。
+              span.author By JSDC team at 14 Oct 2014
+              p.description
+            a.post(href="http://blog.jsdc.tw/2014/10/13/jsdc2014-day1/", target="_blank")
+              h2.title JSDC 2014 首日講者訪談：心中的 JavaScript
+              span.author By JSDC team at 13 Oct 2014
+              p.description
+            a.post(href="http://blog.jsdc.tw/2014/09/16/volunteer/", target="_blank")
+              h2.title JSDC 志工招募中
+              span.author By JSDC team at 16 Sep 2014
+              p.description
+            a.post(href="http://blog.jsdc.tw/2014/09/04/node-prepare/", target="_blank")
+              h2.title 技術轉換需知，學習 Node.js 的前期準備
+              span.author By Caesar Chi at 04 Sep 2014
+              p.description
       section.intro
         .container-box
           h1.title What's JSDC
@@ -72,6 +95,7 @@ html
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
+    script(src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js")
     script(src="../scripts/index.js")
     script.
       var qs, js, q, s, d = document,

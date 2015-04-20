@@ -6,6 +6,8 @@ html
     link(rel="icon", sizes="16x16 32x32", href="../favicon.ico?v=2")
     title JSDC 2015
     link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css")
     link(rel="stylesheet", href="../stylesheets/style.css")
 
     // Open Graph data
@@ -55,6 +57,42 @@ html
             a.typeform-share.link.sponsor(href="https://jsdc2015.typeform.com/to/dgmSSy", data-mode="1", target="_blank")
               | 贊助我們
         include navbar.jade
+      section.news
+        .container
+          .news-slick
+            a.post(href="http://blog.jsdc.tw/2015/04/01/jsdc2015-start/", target="_blank")
+              h2.title JSDC 2015，揚帆啟航
+              span.author By JSDC team at 01 Apr 2015
+              p.description 
+                | 熱愛 JavaScript 與 JSDC 研討會的朋友們大家好。我是 Simon，小弟是今年 JSDC 2015 的總召。
+                | 不知道什麼時候，JSDC 這個活動已經悄悄地世代轉移了，在此對於所有 JSDC 前輩們的付出先深深一
+                | 鞠躬表示感謝...
+            a.post(href="http://blog.jsdc.tw/2014/10/14/jsdc2014-day2/", target="_blank")
+              h2.title JSDC 2014 次日講者訪談: 樂趣、嘗試、目標。
+              span.author By JSDC team at 14 Oct 2014
+              p.description 
+                | JSDC(JavaScript Developer conference) 議程邁入第二天，這一天多了不少將程式結合生活的軟性議題，包含 
+                | Github 成員介紹針對新手的教學應用及公司文化，以及中國講者針對技術與管理上挑戰的探討。
+            a.post(href="http://blog.jsdc.tw/2014/10/13/jsdc2014-day1/", target="_blank")
+              h2.title JSDC 2014 首日講者訪談：心中的 JavaScript
+              span.author By JSDC team at 13 Oct 2014
+              p.description
+                | 2014 JSDC(JavaScript Developer Conference) 於10月11日展開。 今年主題為 JavaScript，
+                | Life Script- JavaScript everywhere. 因為 JavaScript 已經幻化為生活中不可或缺的語言...
+            a.post(href="http://blog.jsdc.tw/2014/09/16/volunteer/", target="_blank")
+              h2.title JSDC 志工招募中
+              span.author By JSDC team at 16 Sep 2014
+              p.description
+                | 今年 JSDC 2014 研討會，我們希望打破所有以往的藩籬，透過獨立開發者，企業應用，框架原理，架構分析，
+                | 實戰分享，希望透過 JSDC 與世界接軌，促進與會者思考體制內架構與體制外的現況，從各種不同面向瞭解 
+                | JavaScript...
+            a.post(href="http://blog.jsdc.tw/2014/09/04/node-prepare/", target="_blank")
+              h2.title 技術轉換需知，學習 Node.js 的前期準備
+              span.author By Caesar Chi at 04 Sep 2014
+              p.description
+                | 持續推廣 node.js 對於新手教學上，通常會遇到許多狀況，以及許多不同的迷思，總和出來其實可以看到一些
+                | 常見的問題。這篇文章也是藉由數次的活動發想實踐當中，延伸出來的導讀文章之一，也是每次在活動一開始的
+                | 時候...
       section.intro
         .container-box
           h1.title JavaScript 開發者年會
@@ -69,6 +107,7 @@ html
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
+    script(src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js")
     script(src="../scripts/index.js")
     script.
       var qs, js, q, s, d = document,
