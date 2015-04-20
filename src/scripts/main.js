@@ -184,7 +184,7 @@ $(document).ready(function() {
     $newWord.removeClass('is-hidden').addClass('is-visible');
   };
 
-  var initHeadline = function () {
+  var initHeadline = function() {
     //insert <i> element for each letter of a changing word
     singleLetters($('.cd-headline.letters').find('b'));
     //initialise headline animation
@@ -197,4 +197,93 @@ $(document).ready(function() {
   // document.body.addEventListener('touchstart',function(){
   //   video.play();
   // }, false);
+
+  var slideNavUp = function (event) {
+    $('#nav').velocity({
+      translateY: '0%'
+    }, "ease");
+  };
+
+  var slideNavDown = function (event) {
+    $('#nav').velocity({
+      translateY: '90%'
+    }, "ease");
+  };
+
+  var openNavDrawer = function (event) {
+    event.stopPropagation();
+    $('#nav').velocity({
+      translateX: '0%'
+    }, "ease");
+  };
+
+  var closeNavDrawer = function (event) {
+    $('#nav').velocity({
+      translateX: '-100%'
+    }, "ease");
+  };
+
+  var navSlideBind = false;
+  var navDrawerBind = false;
+
+  var initNavbar = function() {
+    var width = $(window).width();
+    var height = $(window).height();
+    if (width >= 992) {
+      $('#nav')
+        .velocity({
+          translateX: '0%'
+        }, { duration: 'fast' })
+        // .velocity({
+        //   translateY: '0%'
+        // }, "ease")
+        .velocity({
+          translateY: '90%'
+        }, { duration: 'fast' });
+
+      $('.nav-btn button').unbind('click', openNavDrawer);
+      $('body').unbind('click', closeNavDrawer);
+      navDrawerBind = false;
+
+      if (!navSlideBind) {
+        $('#nav').off('mouseenter');
+        $('#nav').off('mouseleave');
+        $('#nav').on('mouseenter', slideNavUp);
+        $('#nav').on('mouseleave', slideNavDown);
+        navSlideBind = true;
+      }
+
+    } else {
+      $('#nav')
+        .velocity({
+          translateY: '0%'
+        }, { duration: 'fast' })
+        .velocity({
+          translateX: '-100%'
+        }, { duration: 'fast' });
+
+      $('#nav').unbind('mouseenter', slideNavUp);
+      $('#nav').unbind('mouseleave', slideNavDown);
+      navSlideBind = false;
+
+      if (!navDrawerBind) {
+        $('.nav-btn button').off('click');
+        $('body').off('click');
+        $('.nav-btn button').on('click', openNavDrawer);
+        $('body').on('click', closeNavDrawer);
+        navDrawerBind = true
+      }
+    }
+
+    $('#nav').on('click', function (event) {
+      event.stopPropagation();
+    });
+  };
+
+  $(window).resize(function (event) {
+    initNavbar();
+    console.log(event);
+  });
+
+  initNavbar();
 });
