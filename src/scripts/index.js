@@ -206,7 +206,7 @@ $(document).ready(function() {
 
   var slideNavDown = function (event) {
     $('#nav').velocity({
-      translateY: '90%'
+      translateY: '80%'
     }, "ease");
   };
 
@@ -238,7 +238,7 @@ $(document).ready(function() {
         //   translateY: '0%'
         // }, "ease")
         .velocity({
-          translateY: '90%'
+          translateY: '80%'
         }, { duration: 'fast' });
 
       $('.nav-btn button').unbind('click', openNavDrawer);
@@ -294,7 +294,7 @@ $(document).ready(function() {
       slidesToShow: 3,
       autoplay: true,
       autoplaySpeed: 5000,
-      adaptiveHeight: true,
+      // adaptiveHeight: true,
       // variableWidth: true,
       responsive: [{
         breakpoint: 770,
