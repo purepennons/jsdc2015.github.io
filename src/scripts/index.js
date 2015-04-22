@@ -201,26 +201,26 @@ $(document).ready(function() {
   var slideNavUp = function (event) {
     $('#nav').velocity({
       translateY: '0%'
-    }, "ease");
+    });
   };
 
   var slideNavDown = function (event) {
     $('#nav').velocity({
       translateY: '80%'
-    }, "ease");
+    });
   };
 
   var openNavDrawer = function (event) {
     event.stopPropagation();
     $('#nav').velocity({
       translateX: '0%'
-    }, "ease");
+    });
   };
 
   var closeNavDrawer = function (event) {
     $('#nav').velocity({
       translateX: '-100%'
-    }, "ease");
+    });
   };
 
   var navSlideBind = false;
