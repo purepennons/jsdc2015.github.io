@@ -311,8 +311,9 @@ $(document).ready(function() {
       }, {
         breakpoint: 480,
         settings: {
+          dots: true,
           arrows: false,
-          centerMode: true,
+          centerMode: false,
           centerPadding: '40px',
           slidesToShow: 1
         }
