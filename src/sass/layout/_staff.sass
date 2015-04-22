@@ -1,0 +1,36 @@
+.staff
+  background-color: $logo-blue
+  overflow: hidden
+  .title
+    color: #fff
+    font-size: 1.5em
+    text-align: center
+  .container
+    +display-flex
+    +flex-wrap(wrap)
+    +justify-content(center)
+
+  .person
+    background-color: #fff
+    width: 200px
+    height: 200px
+    padding: 10px
+    margin: 20px
+    border-radius: 10px
+    +display-flex
+    +flex-direction(column)
+    +susy-breakpoint($width-small, 12)
+      width: 300px
+      height: 300px
+  .avatar
+    height: 100px
+    +susy-breakpoint($width-small, 12)
+      height: 150px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .introduction
+    padding: 10px
+    h4
+      text-align: center
