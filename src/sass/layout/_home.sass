@@ -85,12 +85,19 @@
     color: #8f8f8f
     margin: 50px 20px
     // font-weight: bold
+  .share-buttons
+    padding-top: 10px
+    padding-bottom: 10px
+    margin-top: 10px
+    margin-bottom: 10px
 
 section
   overflow: hidden
   .title
-    font-size: 1.5em
+    font-size: 1em
     text-align: center
+    +susy-breakpoint($width-small, 12)
+      font-size: 1.5em
 
 a.typeform-share
   text-decoration: none

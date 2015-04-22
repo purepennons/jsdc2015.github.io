@@ -3,34 +3,44 @@
   overflow: hidden
   .title
     color: #fff
-    font-size: 1.5em
-    text-align: center
-  .container
+  .container-fluid
     +display-flex
     +flex-wrap(wrap)
     +justify-content(center)
 
   .person
     background-color: #fff
-    width: 200px
-    height: 200px
-    padding: 10px
-    margin: 20px
+    width: 100px
+    height: 100px
+    // padding: 10px
+    margin: 10px
     border-radius: 10px
+    overflow: hidden
     +display-flex
     +flex-direction(column)
     +susy-breakpoint($width-small, 12)
-      width: 300px
-      height: 300px
+      width: 180px
+      height: 180px
   .avatar
-    height: 100px
-    +susy-breakpoint($width-small, 12)
-      height: 150px
+    // height: 50px
+    // +susy-breakpoint($width-small, 12)
+    //   height: 90px
     img
       width: 100%
       height: 100%
       object-fit: cover
   .introduction
-    padding: 10px
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+    height: 75px
+    text-align: center
+    padding: 1px
+    +susy-breakpoint($width-small, 12)
+      padding: 10px
+      height: 90px
     h4
-      text-align: center
+      font-size: 1em
+      margin-top: 0
+      margin-bottom: 1px
+      +susy-breakpoint($width-medium, 12)
+        margin-top: 0
+        margin-bottom: 5px

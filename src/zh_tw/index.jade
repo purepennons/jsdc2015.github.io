@@ -93,6 +93,64 @@ html
                 | 持續推廣 node.js 對於新手教學上，通常會遇到許多狀況，以及許多不同的迷思，總和出來其實可以看到一些
                 | 常見的問題。這篇文章也是藉由數次的活動發想實踐當中，延伸出來的導讀文章之一，也是每次在活動一開始的
                 | 時候...
+      section.staff
+        .title
+          h1 Staff
+        .container-fluid
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Agenda
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Record
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Service
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Network
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Finance
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Ticketing
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span PR
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Web developer
+          .person
+            .avatar
+              img(src="../images/no-avatar.jpg")
+            .introduction
+              h4 Name
+              span Marketing
       section.intro
         .container-box
           h1.title JavaScript 開發者年會
@@ -104,6 +162,8 @@ html
             | 我們的新思維將更進一步改善架構、強化團隊及最佳化開發流程。
           a.typeform-share.link.contact(href="https://jsdc2015.typeform.com/to/Z3xnIk", data-mode="1", target="_blank")
             | 聯繫我們
+          .share-buttons
+            .fb-share-button(data-href="http://2015.jsdc.tw/zh_tw/", data-layout="button_count")
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
@@ -132,3 +192,12 @@ html
         s = gt.call(d, 'head')[0];
         s.appendChild(qs, s)
       }
+    #fb-root
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=715893795173476";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
