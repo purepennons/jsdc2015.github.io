@@ -58,6 +58,8 @@ html
               | 贊助我們
         include navbar.jade
       section.news
+        .title
+          h1 最新消息
         .container
           .news-slick
             a.post(href="http://blog.jsdc.tw/2015/04/01/jsdc2015-start/", target="_blank")
@@ -93,9 +95,23 @@ html
                 | 持續推廣 node.js 對於新手教學上，通常會遇到許多狀況，以及許多不同的迷思，總和出來其實可以看到一些
                 | 常見的問題。這篇文章也是藉由數次的活動發想實踐當中，延伸出來的導讀文章之一，也是每次在活動一開始的
                 | 時候...
+      section.intro
+        .container-box
+          .title
+            h1 JavaScript 開發者年會
+          .divider
+          p.info
+            | 今年，JavaScript 開發者年會 (JavaScript Developers Conference, 簡稱 JSDC) 
+            | 打破了壁壘，整合來自獨立開發者、企業、組織及機構的科技力量。
+            | 我們致力使知識全球化，並且讓參與者重新認識 JavaScript 。
+            | 我們的新思維將更進一步改善架構、強化團隊及最佳化開發流程。
+          a.typeform-share.link.contact(href="https://jsdc2015.typeform.com/to/Z3xnIk", data-mode="1", target="_blank")
+            | 聯繫我們
+          .share-buttons
+            .fb-share-button(data-href="http://2015.jsdc.tw/zh_tw/", data-layout="button_count")
       section.staff
         .title
-          h1 Staff
+          h1 工作人員
         .container-fluid
           .person
             .avatar
@@ -151,19 +167,7 @@ html
             .introduction
               h4 Name
               span Marketing
-      section.intro
-        .container-box
-          h1.title JavaScript 開發者年會
-          .divider
-          p.info
-            | 今年，JavaScript 開發者年會 (JavaScript Developers Conference, 簡稱 JSDC) 
-            | 打破了壁壘，整合來自獨立開發者、企業、組織及機構的科技力量。
-            | 我們致力使知識全球化，並且讓參與者重新認識 JavaScript 。
-            | 我們的新思維將更進一步改善架構、強化團隊及最佳化開發流程。
-          a.typeform-share.link.contact(href="https://jsdc2015.typeform.com/to/Z3xnIk", data-mode="1", target="_blank")
-            | 聯繫我們
-          .share-buttons
-            .fb-share-button(data-href="http://2015.jsdc.tw/zh_tw/", data-layout="button_count")
+
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")

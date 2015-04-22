@@ -199,28 +199,32 @@ $(document).ready(function() {
   // }, false);
 
   var slideNavUp = function (event) {
-    $('#nav').velocity({
-      translateY: '0%'
-    });
+    // $('#nav').velocity({
+    //   translateY: '0%'
+    // });
+    $('#nav').addClass('active');
   };
 
   var slideNavDown = function (event) {
-    $('#nav').velocity({
-      translateY: '80%'
-    });
+    // $('#nav').velocity({
+    //   translateY: '80%'
+    // });
+    $('#nav').removeClass('active');
   };
 
   var openNavDrawer = function (event) {
     event.stopPropagation();
-    $('#nav').velocity({
-      translateX: '0%'
-    });
+    // $('#nav').velocity({
+    //   translateX: '0%'
+    // });
+    $('#nav').addClass('active');
   };
 
   var closeNavDrawer = function (event) {
-    $('#nav').velocity({
-      translateX: '-100%'
-    });
+    // $('#nav').velocity({
+    //   translateX: '-100%'
+    // });
+    $('#nav').removeClass('active');
   };
 
   var navSlideBind = false;
@@ -230,16 +234,16 @@ $(document).ready(function() {
     var width = $(window).width();
     var height = $(window).height();
     if (width >= 992) {
-      $('#nav')
-        .velocity({
-          translateX: '0%'
-        }, { duration: 'fast' })
-        // .velocity({
-        //   translateY: '0%'
-        // }, "ease")
-        .velocity({
-          translateY: '80%'
-        }, { duration: 'fast' });
+      // $('#nav')
+      //   .velocity({
+      //     translateX: '0%'
+      //   }, { duration: 'fast' })
+      //   // .velocity({
+      //   //   translateY: '0%'
+      //   // }, "ease")
+      //   .velocity({
+      //     translateY: '80%'
+      //   }, { duration: 'fast' });
 
       $('.nav-btn button').unbind('click', openNavDrawer);
       $('body').unbind('click', closeNavDrawer);
@@ -254,13 +258,13 @@ $(document).ready(function() {
       }
 
     } else {
-      $('#nav')
-        .velocity({
-          translateY: '0%'
-        }, { duration: 'fast' })
-        .velocity({
-          translateX: '-100%'
-        }, { duration: 'fast' });
+      // $('#nav')
+      //   .velocity({
+      //     translateY: '0%'
+      //   }, { duration: 'fast' })
+      //   .velocity({
+      //     translateX: '-100%'
+      //   }, { duration: 'fast' });
 
       $('#nav').unbind('mouseenter', slideNavUp);
       $('#nav').unbind('mouseleave', slideNavDown);

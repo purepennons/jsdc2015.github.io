@@ -25,29 +25,35 @@
     bottom: 0
     height: auto
     +flex-direction(row)
-    +transform(translateY(90%))
+    +transform(translateY(80%))
+    &.active
+      +transform(translateY(0))
+  &.active
+    +transform(translateX(0))
+    // +susy-breakpoint($width-small, 12)
+    //   +transform(translateY(0))
   //   position: absolute
   //   background: transparent
   // &:hover
   //   +transform(translateY(0))
-  .nav-menu
-    font-size: 1.5em
-    padding: 0
-    +display-flex
-    +justify-content(center)
-    +flex-wrap(wrap)
-    li
-      &:before
-        content: "/"
-      &:first-child:before
-        content: ""
-      a
-        padding: 5px 5px
-        text-decoration: none
-        font-weight: 700
-        +transition-duration(0.3s)
-        &:hover
-          border-bottom: 3px solid #fff
+  // .nav-menu
+  //   font-size: 1.5em
+  //   padding: 0
+  //   +display-flex
+  //   +justify-content(center)
+  //   +flex-wrap(wrap)
+  //   li
+  //     &:before
+  //       content: "/"
+  //     &:first-child:before
+  //       content: ""
+  //     a
+  //       padding: 5px 5px
+  //       text-decoration: none
+  //       font-weight: 700
+  //       +transition-duration(0.3s)
+  //       &:hover
+  //         border-bottom: 3px solid #fff
   .block
     height: 25%
     width: auto
