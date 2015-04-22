@@ -233,7 +233,7 @@ $(document).ready(function() {
   var initNavbar = function() {
     var width = $(window).width();
     var height = $(window).height();
-    if (width >= 992) {
+    if (width >= 768) {
       // $('#nav')
       //   .velocity({
       //     translateX: '0%'
