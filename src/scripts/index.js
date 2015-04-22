@@ -29,7 +29,7 @@ $(document).ready(function() {
       var word = $(this),
         letters = word.text().split(''),
         selected = word.hasClass('is-visible');
-      for (i in letters) {
+      for (var i in letters) {
         if (word.parents('.rotate-2').length > 0) letters[i] = '<em>' + letters[i] + '</em>';
         letters[i] = (selected) ? '<i class="in">' + letters[i] + '</i>' : '<i>' + letters[i] + '</i>';
       }
@@ -46,11 +46,11 @@ $(document).ready(function() {
       if (headline.hasClass('loading-bar')) {
         duration = barAnimationDelay;
         setTimeout(function() {
-          headline.find('.cd-words-wrapper').addClass('is-loading')
+          headline.find('.cd-words-wrapper').addClass('is-loading');
         }, barWaiting);
       } else if (headline.hasClass('clip')) {
         var spanWrapper = headline.find('.cd-words-wrapper'),
-          newWidth = spanWrapper.width() + 10
+          newWidth = spanWrapper.width() + 10;
         spanWrapper.css('width', newWidth);
       } else if (!headline.hasClass('type')) {
         //assign to .cd-words-wrapper the width of its longest word
@@ -61,11 +61,11 @@ $(document).ready(function() {
           if (wordWidth > width) width = wordWidth;
         });
         headline.find('.cd-words-wrapper').css('width', width);
-      };
+      }
 
       //trigger animation
       setTimeout(function() {
-        hideWord(headline.find('.is-visible').eq(0))
+        hideWord(headline.find('.is-visible').eq(0));
       }, duration);
     });
   };
@@ -81,7 +81,7 @@ $(document).ready(function() {
         $word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
       }, selectionDuration);
       setTimeout(function() {
-        showWord(nextWord, typeLettersDelay)
+        showWord(nextWord, typeLettersDelay);
       }, typeAnimationDelay);
 
     } else if ($word.parents('.cd-headline').hasClass('letters')) {
@@ -101,16 +101,16 @@ $(document).ready(function() {
       $word.parents('.cd-words-wrapper').removeClass('is-loading');
       switchWord($word, nextWord);
       setTimeout(function() {
-        hideWord(nextWord)
+        hideWord(nextWord);
       }, barAnimationDelay);
       setTimeout(function() {
-        $word.parents('.cd-words-wrapper').addClass('is-loading')
+        $word.parents('.cd-words-wrapper').addClass('is-loading');
       }, barWaiting);
 
     } else {
       switchWord($word, nextWord);
       setTimeout(function() {
-        hideWord(nextWord)
+        hideWord(nextWord);
       }, animationDelay);
     }
   };
@@ -125,7 +125,7 @@ $(document).ready(function() {
         'width': $word.width() + 10
       }, revealDuration, function() {
         setTimeout(function() {
-          hideWord($word)
+          hideWord($word);
         }, revealAnimationDelay);
       });
     }
@@ -140,7 +140,7 @@ $(document).ready(function() {
       }, $duration);
     } else if ($bool) {
       setTimeout(function() {
-        hideWord(takeNext($word))
+        hideWord(takeNext($word));
       }, animationDelay);
     }
 
@@ -165,8 +165,8 @@ $(document).ready(function() {
       }
       if (!$bool) {
         setTimeout(function() {
-          hideWord($word)
-        }, animationDelay)
+          hideWord($word);
+        }, animationDelay);
       }
     }
   };
@@ -275,7 +275,7 @@ $(document).ready(function() {
         $('body').off('click');
         $('.nav-btn button').on('click', openNavDrawer);
         $('body').on('click', closeNavDrawer);
-        navDrawerBind = true
+        navDrawerBind = true;
       }
     }
 
@@ -333,4 +333,5 @@ $(document).ready(function() {
   };
 
   initScrollEvent($('.nav-news'), $('section.news'));
+  initScrollEvent($('.nav-staff'), $('section.staff'));
 });
