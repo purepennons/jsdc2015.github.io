@@ -59,7 +59,10 @@ section
     font-size: 20px
     padding: 10px
   .tagline
+    height: 130px
     padding: 30px 0
+    +susy-breakpoint($width-small, 12)
+      height: auto
   .activity
     +display-flex
     +justify-content(center)
