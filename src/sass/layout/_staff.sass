@@ -10,6 +10,7 @@
 
   .person
     background-color: #fff
+    color: #000
     width: 100px
     height: 100px
     // padding: 10px
@@ -20,6 +21,8 @@
     +susy-breakpoint($width-small, 12)
       width: 180px
       height: 180px
+    &:hover
+      color: lighten(#000, 25%)
   .avatar
     // height: 50px
     // +susy-breakpoint($width-small, 12)
