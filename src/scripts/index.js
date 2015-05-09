@@ -199,32 +199,32 @@ $(document).ready(function() {
   // }, false);
 
   var slideNavUp = function (event) {
-    // $('#nav').velocity({
+    // $('#nav-main').velocity({
     //   translateY: '0%'
     // });
-    $('#nav').addClass('active');
+    $('#nav-main').addClass('active');
   };
 
   var slideNavDown = function (event) {
-    // $('#nav').velocity({
+    // $('#nav-main').velocity({
     //   translateY: '80%'
     // });
-    $('#nav').removeClass('active');
+    $('#nav-main').removeClass('active');
   };
 
   var openNavDrawer = function (event) {
     event.stopPropagation();
-    // $('#nav').velocity({
+    // $('#nav-main').velocity({
     //   translateX: '0%'
     // });
-    $('#nav').addClass('active');
+    $('#nav-main').addClass('active');
   };
 
   var closeNavDrawer = function (event) {
-    // $('#nav').velocity({
+    // $('#nav-main').velocity({
     //   translateX: '-100%'
     // });
-    $('#nav').removeClass('active');
+    $('#nav-main').removeClass('active');
   };
 
   var navSlideBind = false;
@@ -234,7 +234,7 @@ $(document).ready(function() {
     var width = $(window).width();
     var height = $(window).height();
     if (width >= 768) {
-      // $('#nav')
+      // $('#nav-main')
       //   .velocity({
       //     translateX: '0%'
       //   }, { duration: 'fast' })
@@ -250,15 +250,15 @@ $(document).ready(function() {
       navDrawerBind = false;
 
       if (!navSlideBind) {
-        $('#nav').off('mouseenter');
-        $('#nav').off('mouseleave');
-        $('#nav').on('mouseenter', slideNavUp);
-        $('#nav').on('mouseleave', slideNavDown);
+        $('#nav-main').off('mouseenter');
+        $('#nav-main').off('mouseleave');
+        $('#nav-main').on('mouseenter', slideNavUp);
+        $('#nav-main').on('mouseleave', slideNavDown);
         navSlideBind = true;
       }
 
     } else {
-      // $('#nav')
+      // $('#nav-main')
       //   .velocity({
       //     translateY: '0%'
       //   }, { duration: 'fast' })
@@ -266,8 +266,8 @@ $(document).ready(function() {
       //     translateX: '-100%'
       //   }, { duration: 'fast' });
 
-      $('#nav').unbind('mouseenter', slideNavUp);
-      $('#nav').unbind('mouseleave', slideNavDown);
+      $('#nav-main').unbind('mouseenter', slideNavUp);
+      $('#nav-main').unbind('mouseleave', slideNavDown);
       navSlideBind = false;
 
       if (!navDrawerBind) {
@@ -279,7 +279,7 @@ $(document).ready(function() {
       }
     }
 
-    $('#nav').on('click', function (event) {
+    $('#nav-main').on('click', function (event) {
       event.stopPropagation();
     });
   };

@@ -56,7 +56,25 @@ html(lang="zh")
               | 成為講者
             a.typeform-share.link.sponsor(href="https://jsdc2015.typeform.com/to/dgmSSy", data-mode="1", target="_blank")
               | 贊助我們
-        include navbar.jade
+        //- Navigation bar on landing page
+        nav#nav-main
+          .block.grey
+          .block.red
+            ul
+              li 
+                a.nav-news 最新消息
+          .block.green
+            ul
+              li 
+                a.nav-schedule 議程
+          .block.blue
+            ul
+              li
+                a.nav-speakers 講者
+              li
+                a.nav-sponsors 贊助
+              li
+                a.nav-staff 工作人員
       section.news
         .title
           h1 最新消息

@@ -55,7 +55,25 @@ html(lang="en")
               | Be a speaker
             a.typeform-share.link.sponsor(href="https://jsdc2015.typeform.com/to/dgmSSy", data-mode="1", target="_blank")
               | Be a sponsor
-        include navbar.jade
+        //- Navigation bar on landing page
+        nav#nav-main
+          .block.grey
+          .block.red
+            ul
+              li 
+                a.nav-news News
+          .block.green
+            ul
+              li 
+                a.nav-schedule Schedule
+          .block.blue
+            ul
+              li
+                a.nav-speakers Speakers
+              li
+                a.nav-sponsors Sponsors
+              li
+                a.nav-staff Staff
       section.news
         .title
           h1 News
