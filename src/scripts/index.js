@@ -20,7 +20,7 @@ $(document).ready(function() {
     typeLettersDelay = 150,
     selectionDuration = 500,
     typeAnimationDelay = selectionDuration + 800,
-    //clip effect 
+    //clip effect
     revealDuration = 600,
     revealAnimationDelay = 1500;
 
@@ -218,6 +218,9 @@ $(document).ready(function() {
     //   translateX: '0%'
     // });
     $('#nav-main').addClass('active');
+    $('.nav-btn button').addClass('active');
+    $('.nav-btn button').off('click');
+    $('.nav-btn button').on('click', closeNavDrawer);
   };
 
   var closeNavDrawer = function (event) {
@@ -225,6 +228,9 @@ $(document).ready(function() {
     //   translateX: '-100%'
     // });
     $('#nav-main').removeClass('active');
+    $('.nav-btn button').removeClass('active');
+    $('.nav-btn button').off('click');
+    $('.nav-btn button').on('click', openNavDrawer);
   };
 
   var navSlideBind = false;
@@ -246,7 +252,7 @@ $(document).ready(function() {
       //   }, { duration: 'fast' });
 
       $('.nav-btn button').unbind('click', openNavDrawer);
-      $('body').unbind('click', closeNavDrawer);
+      // $('body').unbind('click', closeNavDrawer);
       navDrawerBind = false;
 
       if (!navSlideBind) {
@@ -274,7 +280,7 @@ $(document).ready(function() {
         $('.nav-btn button').off('click');
         $('body').off('click');
         $('.nav-btn button').on('click', openNavDrawer);
-        $('body').on('click', closeNavDrawer);
+        // $('body').on('click', closeNavDrawer);
         navDrawerBind = true;
       }
     }

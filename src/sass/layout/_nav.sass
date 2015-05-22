@@ -89,19 +89,36 @@
   position: absolute
   top: 20px
   left: 20px
-  z-index: 2
+  z-index: 3
   display: block
   +susy-breakpoint($width-small, 12)
     display: none
   button
-    padding: 10px
     background-color: transparent
-  .icon-line
-    background-color: #000
-    width: 20px
-    height: 2px
-    margin-top: 5px
-    display: block
+    width: 30px
+    height: 45px
+    padding: 0px
+    +transform(rotate(0deg))
+    +transition(0.5s ease-in-out)
+    &.active
+      .icon-line
+        &:nth-child(1)
+          +transform(translateY(10px) rotate(135deg))
+        &:nth-child(2)
+          opacity: 0
+          +transform(translateX(-60px))
+        &:nth-child(3)
+          +transform(translateY(-10px) rotate(-135deg))
+    .icon-line
+      background-color: #fff
+      width: 100%
+      height: 5px
+      margin-top: 5px
+      border-radius: 100px
+      display: block
+      opacity: 1
+      +transform(rotate(0deg))
+      +transition(0.25s ease-in-out)
 // +keyframes(dropNav)
 //   0%
 //     +transform(translateY(100%))
