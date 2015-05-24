@@ -341,4 +341,5 @@ $(document).ready(function() {
 
   initScrollEvent($('.nav-news'), $('section.news'));
   initScrollEvent($('.nav-staff'), $('section.staff'));
+  initScrollEvent($('.nav-location'), $('section.location'));
 });
