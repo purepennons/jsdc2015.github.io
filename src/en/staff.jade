@@ -18,5 +18,12 @@ html(lang="en")
     meta(property="og:description", content="This year, JSDC is breaking the barriers by integrating the technical power from independent developers, enterprises, framewords, architectures, and practices.")
     meta(property="og:site_name", content="JSDC 2015")
   body
-    include navbar.jade
+    header.common
+      .logo
+        img(src="/images/logo.png", alt="")
+      include navbar.jade
+      ul.languages
+          li
+            a(href="/zh_tw") 中文
+    section.banner
     script(src="../scripts/staff.js")

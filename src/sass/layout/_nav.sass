@@ -126,3 +126,27 @@
 //     +transform(translateY(0))
 //   100%
 //     +transform(translateY(90%))
+
+#navbar
+  display: inline-block
+  height: 50px
+  .nav-menu
+    padding: 0
+    margin: 0
+    display: none
+    +susy-breakpoint($width-small, 12)
+      display: block
+    .active
+      display: block
+    li
+      width: 45vw
+      display: inline-block
+      +susy-breakpoint($width-small, 12)
+        width: auto
+        // display: inline-block
+      a
+        display: block
+        padding: 10px
+  .navbar-btn
+    +susy-breakpoint($width-small, 12)
+      display: none
