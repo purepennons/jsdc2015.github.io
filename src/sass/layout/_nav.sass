@@ -128,14 +128,15 @@
 //     +transform(translateY(90%))
 
 #navbar
-  display: inline-block
   height: 50px
   .nav-menu
+    +align-items(center)
+    height: 100%
     padding: 0
     margin: 0
     display: none
     +susy-breakpoint($width-small, 12)
-      display: block
+      +display-flex
     .active
       display: block
     li
@@ -147,6 +148,17 @@
       a
         display: block
         padding: 10px
-  .navbar-btn
-    +susy-breakpoint($width-small, 12)
-      display: none
+.navbar-btn
+  background-color: transparent
+  width: 25px
+  height: 100%
+  padding: 0
+  margin: 0 20px
+  +susy-breakpoint($width-small, 12)
+    display: none
+  .icon-line
+    display: block
+    background-color: #0f0f0f
+    width: 100%
+    padding-bottom: 3px
+    margin-bottom: 5px
