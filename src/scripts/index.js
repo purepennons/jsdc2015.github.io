@@ -342,4 +342,10 @@ $(document).ready(function() {
   initScrollEvent($('.nav-news'), $('section.news'));
   initScrollEvent($('.nav-staff'), $('section.staff'));
   initScrollEvent($('.nav-location'), $('section.location'));
+
+  var elevator = new Elevator({
+    element: document.querySelector('#elevator-btn'),
+    mainAudio: '/music/elevator.mp3',
+    endAudio: '/music/ding.mp3'
+  });
 });
