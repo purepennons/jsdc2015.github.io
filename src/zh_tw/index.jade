@@ -10,6 +10,8 @@ html(lang="zh")
     link(rel="stylesheet", href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css")
     //- MailChimp sign up form style
     link(href="//cdn-images.mailchimp.com/embedcode/classic-081711.css", rel="stylesheet", type="text/css")
+    //- Font Awesome
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="../stylesheets/style.css")
 
     // Open Graph data
@@ -136,6 +138,27 @@ html(lang="zh")
             | 聯繫我們
           .share-buttons
             .fb-share-button(data-href="http://2015.jsdc.tw/zh_tw/", data-layout="button_count")
+      section.speakers
+        .title
+          h1 The Speakers
+        .container
+          - var speakers = [{ name: 'Josh Koo', img: 'https://avatars3.githubusercontent.com/u/314997?v=3&s=460', github: 'https://github.com/zz85', web: 'http://www.joshuakoo.com/', project: 'Three.js', projectWeb: 'http://threejs.org/', projectGithub: 'https://github.com/mrdoob/three.js/' }, { name: 'Matthew James Davis', img: 'https://avatars3.githubusercontent.com/u/3845823?v=3&s=460', github: 'https://github.com/davismj', web: 'http://www.mapdotnet.com/', project: 'Aurelia', projectWeb: 'http://aurelia.io/', projectGithub: 'https://github.com/aurelia/framework' }, { name: 'Jonathan Ong', img: 'https://avatars1.githubusercontent.com/u/643505?v=3&s=460', github: 'https://github.com/jonathanong', web: '', project: 'Koa.js', projectWeb: 'http://koajs.com/', projectGithub: 'https://github.com/koajs/koa' }, { name: 'Hedger Wang', img: 'https://avatars0.githubusercontent.com/u/1504439?v=3&s=460', github: 'https://github.com/hedgerwang', web: '', project: 'React-Native', projectWeb: 'http://facebook.github.io/react-native/', projectGithub: 'https://github.com/facebook/react-native' }]
+          each speaker in speakers
+            .speaker
+              .avatar
+                img(src=speaker.img.length ? speaker.img : '/images/no-avatar.jpg', alt=speaker.name)
+              .introduction
+                h4.name= speaker.name
+                span.project
+                  a(href=speaker.projectGithub, target="_blank")= speaker.project
+                  |  contributor
+                .links
+                  if speaker.web.length
+                    a.web.link-item(href=speaker.web, target="_blank")
+                      i.fa.fa-link.fa-3x
+                  if speaker.projectGithub
+                    a.github.link-item(href=speaker.github, target="_blank")
+                      i.fa.fa-github.fa-3x
       section.staff
         .title
           h1 工作人員
