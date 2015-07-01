@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+.picasa.ini
+.picasaoriginals
+.sass-cache
+build
