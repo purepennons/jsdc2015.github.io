@@ -340,6 +340,7 @@ $(document).ready(function() {
   };
 
   initScrollEvent($('.nav-news'), $('section.news'));
+  initScrollEvent($('.nav-speakers'), $('section.speakers'));
   initScrollEvent($('.nav-staff'), $('section.staff'));
   initScrollEvent($('.nav-location'), $('section.location'));
 
