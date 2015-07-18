@@ -57,10 +57,8 @@ html(lang="zh")
               b Robot
             span  with JavaScript
           .activity
-            a.typeform-share.link.speaker(href="https://jsdc2015.typeform.com/to/JIc9v2", data-mode="1", target="_blank")
-              | 成為講者
-            a.typeform-share.link.sponsor(href="https://jsdc2015.typeform.com/to/dgmSSy", data-mode="1", target="_blank")
-              | 贊助我們
+            a.reserve(href="http://jsdc-tw.kktix.cc/events/jsdc2015", target="kktix")
+              | 立即報名
         //- Navigation bar on landing page
         nav#nav-main
           .block.grey
@@ -134,8 +132,13 @@ html(lang="zh")
           //- .divider
           //- .info
             p empty
-          a.typeform-share.link.contact(href="https://jsdc2015.typeform.com/to/Z3xnIk", data-mode="1", target="_blank")
-            | 聯繫我們
+          .activity
+            a.typeform-share.link.speaker(href="https://jsdc2015.typeform.com/to/JIc9v2", data-mode="1", target="_blank")
+              | 成為講者
+            a.typeform-share.link.sponsor(href="https://jsdc2015.typeform.com/to/dgmSSy", data-mode="1", target="_blank")
+              | 贊助我們
+            a.typeform-share.link.contact(href="https://jsdc2015.typeform.com/to/Z3xnIk", data-mode="1", target="_blank")
+              | 聯繫我們
           .share-buttons
             .fb-share-button(data-href="http://2015.jsdc.tw/zh_tw/", data-layout="button_count")
       section.speakers
@@ -254,6 +257,9 @@ html(lang="zh")
                   input(type="text", name="b_e158304d0affdf640565a3e33_914d8a037f", tabindex="-1", value="")
                 //- .clear
           // End mc_embed_signup
+          button#elevator-btn(type="button") 
+            span.glyphicon.glyphicon-eject
+            | 回到頂端
           p
             | ©2015 
             a(href="http://jsdc.tw") JSDC.tw
@@ -262,6 +268,7 @@ html(lang="zh")
     script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
     script(src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js")
+    script(src="/scripts/elevator.min.js")
     script(src="../scripts/index.js")
     script.
       var qs, js, q, s, d = document,

@@ -20,7 +20,7 @@ var srcFiles = {
   // views: './src/views/**/*.jade',
   views: 'src/**/*.jade',
   js: 'src/scripts/**/*.js',
-  style: 'src/sass/**/*.sass',
+  style: 'src/sass/**/*.scss',
   assets: {
     files: 'src/assets/**',
     base: 'src/assets'
