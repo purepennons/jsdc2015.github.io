@@ -1,0 +1,99 @@
+@include keyframes(bounce) {
+  0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+  40% {
+    @include transform(translateY(-30px));
+  }
+  60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+.bounce {
+  @include animation(bounce 2s infinite);
+}
+
+#svg {
+  $animation_speed: 5s;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 10px;
+  
+  #first-arrow {
+    animation: first-arrow infinite $animation_speed;
+    opacity: 0;
+  }
+  
+  #second-arrow {
+    animation: second-arrow infinite $animation_speed;
+  }
+
+  #third-arrow {
+    animation: third-arrow infinite $animation_speed;
+  }
+}
+
+@keyframes third-arrow {
+    0% {
+      transform: translateY(0);
+    }  
+    33% {
+      transform: translateY(20.4px);
+    }
+    34% {
+      opacity: 0;
+      transform: translateY(-40.8px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(-20.4px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+    
+}
+
+@keyframes second-arrow {
+    0% {
+      transform: translateY(0);
+    }
+    33% {
+      transform: translateY(20.4px);
+    }
+    66% {
+      opacity: 0;
+      transform: translateY(40.8px);
+    }
+    67% {
+      transform: translateY(-20.4px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes first-arrow {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(20.4px);
+    }
+    66% {
+      transform: translateY(40.8px);
+    }
+    99% {
+      opacity: 0;
+      transform: translateY(61.2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
