@@ -1,12 +1,13 @@
 .speakers {
   padding-bottom: 50px;
-  .container {
+  .container-fluid {
     @include display-flex;
     @include flex-wrap(wrap);
     @include justify-content(center);
   }
   .speaker {
     width: 80vw;
+    max-width: 256px;
     border-radius: 10px;
     margin: 10px 1vw;
     position: relative;

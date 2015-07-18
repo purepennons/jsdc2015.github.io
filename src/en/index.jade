@@ -138,7 +138,7 @@ html(lang="en")
       section.speakers
         .title
           h1 The Speakers
-        .container
+        .container-fluid
           - var speakers = [{ name: 'Josh Koo', img: 'https://avatars3.githubusercontent.com/u/314997?v=3&s=460', github: 'https://github.com/zz85', web: 'http://www.joshuakoo.com/', project: 'Three.js', projectWeb: 'http://threejs.org/', projectGithub: 'https://github.com/mrdoob/three.js/' }, { name: 'Matthew James Davis', img: 'https://avatars3.githubusercontent.com/u/3845823?v=3&s=460', github: 'https://github.com/davismj', web: 'http://www.mapdotnet.com/', project: 'Aurelia', projectWeb: 'http://aurelia.io/', projectGithub: 'https://github.com/aurelia/framework' }, { name: 'Jonathan Ong', img: 'https://avatars1.githubusercontent.com/u/643505?v=3&s=460', github: 'https://github.com/jonathanong', web: '', project: 'Koa.js', projectWeb: 'http://koajs.com/', projectGithub: 'https://github.com/koajs/koa' }, { name: 'Hedger Wang', img: 'https://avatars0.githubusercontent.com/u/1504439?v=3&s=460', github: 'https://github.com/hedgerwang', web: '', project: 'React-Native', projectWeb: 'http://facebook.github.io/react-native/', projectGithub: 'https://github.com/facebook/react-native' }]
           each speaker in speakers
             .speaker
@@ -220,6 +220,12 @@ html(lang="en")
             .introduction
               h4 Chiahao Lin
               span Web developer
+          .person
+            .avatar
+              img(src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p320x320/10427692_1003691802980508_8693581886834456698_n.jpg?oh=451610613176b086a9f2b0c88d23970c&oe=565C6789&__gda__=1444688031_ea3d8958c322e5d1ed88c184c17d4ef9")
+            .introduction
+              h4 Terry Sun
+              span Designer
           //- .person
             .avatar
               img(src="../images/no-avatar.jpg")
