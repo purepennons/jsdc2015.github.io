@@ -120,7 +120,7 @@
 
 .lazy-hidden {
   opacity: 0;
-  background: #eee url(../images/loading.gif) no-repeat 50% 50%;
+  background: #eeeeee url(../images/loading.gif) no-repeat 50% 50%;
 }
 
 /* =Fonts
@@ -165,7 +165,7 @@
 
 /* Base */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-/**
+/*
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
@@ -176,7 +176,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-/**
+/*
  * Remove default margin.
  */
 body {
@@ -185,14 +185,14 @@ body {
 
 /* HTML5 display definitions
  * ========================================================================== */
-/**
+/*
  * Correct `block` display not defined in IE 8/9.
  */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block;
 }
 
-/**
+/*
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
@@ -201,7 +201,7 @@ audio, canvas, progress, video {
   vertical-align: baseline;
 }
 
-/**
+/*
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
@@ -210,7 +210,7 @@ audio:not([controls]) {
   height: 0;
 }
 
-/**
+/*
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
@@ -220,14 +220,14 @@ audio:not([controls]) {
 
 /* Links
  * ========================================================================== */
-/**
+/*
  * Remove the gray background color from active links in IE 10.
  */
 a {
   background: transparent;
 }
 
-/**
+/*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active, a:hover {
@@ -236,28 +236,28 @@ a:active, a:hover {
 
 /* Text-level semantics
  * ========================================================================== */
-/**
+/*
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/**
+/*
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
 b, strong {
   font-weight: bold;
 }
 
-/**
+/*
  * Address styling not present in Safari 5 and Chrome.
  */
 dfn {
   font-style: italic;
 }
 
-/**
+/*
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
@@ -266,22 +266,22 @@ h1 {
   margin: 0.67em 0;
 }
 
-/**
+/*
  * Address styling not present in IE 8/9.
  */
 mark {
-  background: #ff0;
-  color: #000;
+  background: yellow;
+  color: black;
 }
 
-/**
+/*
  * Address inconsistent and variable font size in all browsers.
  */
 small {
   font-size: 80%;
 }
 
-/**
+/*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 sub, sup {
@@ -301,14 +301,14 @@ sub {
 
 /* Embedded content
  * ========================================================================== */
-/**
+/*
  * Remove border when inside `a` element in IE 8/9.
  */
 img {
   border: 0;
 }
 
-/**
+/*
  * Correct overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
@@ -317,14 +317,14 @@ svg:not(:root) {
 
 /* Grouping content
  * ========================================================================== */
-/**
+/*
  * Address margin not present in IE 8/9 and Safari 5.
  */
 figure {
   margin: 1em 40px;
 }
 
-/**
+/*
  * Address differences between Firefox and other browsers.
  */
 hr {
@@ -333,14 +333,14 @@ hr {
   height: 0;
 }
 
-/**
+/*
  * Contain overflow in all browsers.
  */
 pre {
   overflow: auto;
 }
 
-/**
+/*
  * Address odd `em`-unit font size rendering in all browsers.
  */
 code, kbd, pre, samp {
@@ -350,11 +350,11 @@ code, kbd, pre, samp {
 
 /* Forms
  * ========================================================================== */
-/**
+/*
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
  * styling of `select`, unless a `border` property is set.
  */
-/**
+/*
  * 1. Correct color not being inherited.
  *    Known issue: affects color of disabled elements.
  * 2. Correct font properties not being inherited.
@@ -366,14 +366,14 @@ button, input, optgroup, select, textarea {
   margin: 0;
 }
 
-/**
+/*
  * Address `overflow` set to `hidden` in IE 8/9/10.
  */
 button {
   overflow: visible;
 }
 
-/**
+/*
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
  * Correct `button` style inheritance in Firefox, IE 8+, and Opera
@@ -383,7 +383,7 @@ button, select {
   text-transform: none;
 }
 
-/**
+/*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
  *    and `video` controls.
  * 2. Correct inability to style clickable `input` types in iOS.
@@ -395,14 +395,14 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
 }
 
-/**
+/*
  * Re-set default cursor for disabled elements.
  */
 button[disabled], html input[disabled] {
   cursor: default;
 }
 
-/**
+/*
  * Remove inner padding and border in Firefox 4+.
  */
 button::-moz-focus-inner, input::-moz-focus-inner {
@@ -410,7 +410,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
 }
 
-/**
+/*
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
@@ -418,7 +418,7 @@ input {
   line-height: normal;
 }
 
-/**
+/*
  * It's recommended that you don't attempt to style these elements.
  * Firefox's implementation doesn't respect box-sizing, padding, or width.
  *
@@ -430,7 +430,7 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0;
 }
 
-/**
+/*
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
@@ -439,7 +439,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   height: auto;
 }
 
-/**
+/*
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
@@ -451,7 +451,7 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/**
+/*
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
@@ -460,16 +460,16 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
   -webkit-appearance: none;
 }
 
-/**
+/*
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid silver;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/**
+/*
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
@@ -478,14 +478,14 @@ legend {
   padding: 0;
 }
 
-/**
+/*
  * Remove default vertical scrollbar in IE 8/9.
  */
 textarea {
   overflow: auto;
 }
 
-/**
+/*
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
@@ -495,7 +495,7 @@ optgroup {
 
 /* Tables
  * ========================================================================== */
-/**
+/*
  * Remove most spacing between table cells.
  */
 table {
@@ -536,13 +536,13 @@ a:hover {
 
 ::-moz-selection {
   background: #dd577a;
-  color: #fff;
+  color: white;
   text-shadow: none;
 }
 
 ::selection {
   background: #dd577a;
-  color: #fff;
+  color: white;
   text-shadow: none;
 }
 
@@ -550,7 +550,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -571,7 +571,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="dat
   font-size: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
-  color: #666;
+  color: #666666;
   padding: 0.5em;
   border: 1px solid #bfbfbf;
   outline: 0;
@@ -592,7 +592,7 @@ input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hove
   border-color: #a5a5a5;
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="search"]:focus, textarea:focus {
-  border-color: #999;
+  border-color: #999999;
 }
 
 /* Fonts */
@@ -601,7 +601,7 @@ header {
   position: relative;
 }
 header .languages {
-  background-color: #fff;
+  background-color: white;
   position: absolute;
   top: 0;
   right: 5%;
@@ -632,8 +632,8 @@ header > .logo img {
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
   text-align: center;
@@ -771,7 +771,7 @@ footer {
   margin: 0;
 }
 #nav-main .block ul a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -827,7 +827,7 @@ footer {
   transform: translateY(-10px) rotate(-135deg);
 }
 .nav-btn button .icon-line {
-  background-color: #fff;
+  background-color: white;
   width: 100%;
   height: 5px;
   margin-top: 5px;
@@ -927,6 +927,23 @@ section.news .title, section.staff .title, section.location .title, section.spea
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.landing .activity, .intro .activity {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media (min-width: 48em) {
+  .landing .activity, .intro .activity {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .landing .activity a.reserve, .intro .activity a.reserve {
+    width: 25vw;
+  }
+}
 
 .landing {
   background-position: center center;
@@ -985,7 +1002,7 @@ section.news .title, section.staff .title, section.location .title, section.spea
   }
 }
 .landing .logo img {
-  background-color: #fff;
+  background-color: white;
   width: 250px;
   padding: 25px;
   border-radius: 20px;
@@ -1001,20 +1018,6 @@ section.news .title, section.staff .title, section.location .title, section.spea
 @media (min-width: 48em) {
   .landing .tagline {
     height: auto;
-  }
-}
-.landing .activity {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
-@media (min-width: 48em) {
-  .landing .activity {
-    -webkit-flex-direction: row;
-    flex-direction: row;
   }
 }
 
@@ -1053,6 +1056,22 @@ section.news .title, section.staff .title, section.location .title, section.spea
   margin-bottom: 10px;
 }
 
+a.reserve {
+  text-decoration: none;
+  background-color: #b9cc54;
+  color: #f1f1f1;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  margin: 10px 10px;
+  border-radius: 100px;
+  display: inline-block;
+}
+a.reserve:hover {
+  background-color: #d1de8f;
+}
+
 a.typeform-share {
   text-decoration: none;
   color: #f1f1f1;
@@ -1087,10 +1106,10 @@ a.typeform-share.contact:hover {
   background-color: #ce4d40;
 }
 .news > .title {
-  color: #fff;
+  color: white;
 }
 .news .news-slick .post {
-  background-color: #fff;
+  background-color: white;
   text-decoration: none;
   height: 300px;
   padding: 10px;
@@ -1109,7 +1128,7 @@ a.typeform-share.contact:hover {
   display: block;
 }
 .news .news-slick .description {
-  color: #000;
+  color: black;
   margin-top: 10px;
 }
 .news .slick-dots {
@@ -1180,7 +1199,7 @@ a.typeform-share.contact:hover {
   vertical-align: middle;
 }
 .speakers .speaker .introduction {
-  background-color: #fff;
+  background-color: white;
   opacity: 0.8;
   text-align: center;
   width: 100%;
@@ -1213,7 +1232,7 @@ a.typeform-share.contact:hover {
   overflow: hidden;
 }
 .staff .title {
-  color: #fff;
+  color: white;
 }
 .staff .container-fluid {
   display: -webkit-flex;
@@ -1224,8 +1243,8 @@ a.typeform-share.contact:hover {
   justify-content: center;
 }
 .staff .person {
-  background-color: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
   width: 100px;
   height: 100px;
   margin: 10px;
@@ -1280,7 +1299,7 @@ a.typeform-share.contact:hover {
   background-color: #b9cc54;
 }
 .location > .title, .location .address {
-  color: #fff;
+  color: white;
 }
 .location p {
   font-size: 1.1em;
@@ -1382,7 +1401,7 @@ a.typeform-share.contact:hover {
   transform: translateY(-50%);
   height: 90%;
   width: 2px;
-  background-color: #000;
+  background-color: black;
 }
 .cd-headline.type .cd-words-wrapper.waiting:after {
   -moz-animation: cd-pulse 1s infinite;
@@ -1396,7 +1415,7 @@ a.typeform-share.contact:hover {
   visibility: hidden;
 }
 .cd-headline.type .cd-words-wrapper.selected b {
-  color: #fff;
+  color: white;
 }
 .cd-headline.type b {
   visibility: hidden;
