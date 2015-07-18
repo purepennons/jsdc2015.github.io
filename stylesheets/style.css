@@ -1151,7 +1151,7 @@ a.typeform-share.contact:hover {
 .speakers {
   padding-bottom: 50px;
 }
-.speakers .container {
+.speakers .container-fluid {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
@@ -1161,6 +1161,7 @@ a.typeform-share.contact:hover {
 }
 .speakers .speaker {
   width: 80vw;
+  max-width: 256px;
   border-radius: 10px;
   margin: 10px 1vw;
   position: relative;
