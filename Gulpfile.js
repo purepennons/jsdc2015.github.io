@@ -1,8 +1,9 @@
-var gulp = require('gulp');
+var gulp        = require('gulp');
 
 var rename      = require('gulp-rename');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
+var data        = require('gulp-data');
 var jade        = require('gulp-jade');
 var compass     = require('gulp-compass');
 var jshint      = require('gulp-jshint');
@@ -12,7 +13,9 @@ var changed     = require('gulp-changed');
 var sourcemaps  = require('gulp-sourcemaps');
 var plumber     = require('gulp-plumber');
 var del         = require('del');
+var _           = require('lodash');
 var browserSync = require('browser-sync');
+var path        = require('path');
 var reload      = browserSync.reload;
 
 var srcFiles = {
@@ -60,7 +63,12 @@ gulp.task('jade-views', function() {
       errorHandler: onError
     }))
     .pipe(changed(buildDir.index, {extension: '.html'}))
-    .pipe(jade({pretty: true}))
+    .pipe(data(function (file) {
+      var json = require('./src/json/data.json');
+      var data = _.assign({}, json);
+      return data;
+    }))
+    .pipe(jade({ pretty: true }))
     .pipe(gulp.dest(buildDir.index));
 });
 
@@ -71,6 +79,11 @@ gulp.task('jade-index',['jade-views'], function() {
       errorHandler: onError
     }))
     .pipe(changed(buildDir.index, {extension: '.html'}))
+    .pipe(data(function (file) {
+      var json = require('./src/json/data.json');
+      var data = _.assign({}, json);
+      return data;
+    }))
     .pipe(jade({pretty: true}))
     .pipe(gulp.dest(buildDir.index));
 });
