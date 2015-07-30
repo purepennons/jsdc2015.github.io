@@ -138,6 +138,7 @@ gulp.task('browser-sync',['build'], function() {
 gulp.task('watch', function() {
   gulp.watch(srcFiles.js, ['lint']);
   gulp.watch(srcFiles.style, ['compass']);
+  gulp.watch('src/json/**/*.json', ['jade-index']);
   gulp.watch(srcFiles.views, ['jade-index']);
   gulp.watch(srcFiles.index, ['jade-index']);
 });
