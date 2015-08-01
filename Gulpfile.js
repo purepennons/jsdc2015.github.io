@@ -64,7 +64,7 @@ gulp.task('jade-views', function() {
     }))
     .pipe(changed(buildDir.index, {extension: '.html'}))
     .pipe(data(function (file) {
-      var json = require('./src/json/data.json');
+      var json = require('./src/json/' + path.basename(file.path, '.jade') + '.json');
       var data = _.assign({}, json);
       return data;
     }))
@@ -79,11 +79,11 @@ gulp.task('jade-index',['jade-views'], function() {
       errorHandler: onError
     }))
     .pipe(changed(buildDir.index, {extension: '.html'}))
-    .pipe(data(function (file) {
-      var json = require('./src/json/data.json');
-      var data = _.assign({}, json);
-      return data;
-    }))
+    // .pipe(data(function (file) {
+    //   var json = require('./src/json/data.json');
+    //   var data = _.assign({}, json);
+    //   return data;
+    // }))
     .pipe(jade({pretty: true}))
     .pipe(gulp.dest(buildDir.index));
 });
