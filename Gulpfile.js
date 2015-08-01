@@ -58,7 +58,7 @@ gulp.task('lib', function() {
 
 // Views files
 gulp.task('jade-views', function() {
-  return gulp.src(srcFiles.views)
+  return gulp.src([srcFiles.views, '!src/**/_*.jade'])
     .pipe(plumber({
       errorHandler: onError
     }))
