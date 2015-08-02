@@ -18,7 +18,7 @@
 .list-item {
   @include display-flex;
   min-height: 100px;
-  padding: 0;
+  padding: 10px 0;
   margin: 0 50px;
   border-top: 1px solid #aaaaaa;
   & > li {
