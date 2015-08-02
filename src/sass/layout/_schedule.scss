@@ -4,7 +4,6 @@
 
 .schedules-list {
   .list {
-
   }
 }
 
@@ -13,5 +12,32 @@
 }
 
 .day-two {
-  
+
+}
+
+.list-item {
+  @include display-flex;
+  min-height: 100px;
+  padding: 0;
+  margin: 0 50px;
+  border-top: 1px solid #aaaaaa;
+  & > li {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    width: 45%;
+    &.single {
+      width: 90%;
+    }
+    .avatar {
+      width: 180px;
+      height: 180px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .time {
+    width: 10%;
+  }
 }

@@ -1,1 +1,28 @@
-{}
+{
+  "en": {
+    "dayone": [{
+      "time": "0900am",
+      "agendas": [{
+        "speaker": "Matt",
+        "image": "https://goo.gl/MX5cy3",
+        "topic": "Building Single-Page Apps with Aurelia"
+      }]
+    }, {
+      "time": "0920am",
+      "agendas": []
+    }, {
+      "time": "1020am",
+      "agendas": [{
+        "speaker": "Kuro Hsu",
+        "image": "https://lh4.googleusercontent.com/-ZWxW7RN-XrZWj4iKVELi2PaRds_iZAplO0bKpA38_DS4vWqrPPlrZdwZUOAHi22NntW81voS7CAYw4=w2512-h1170",
+        "topic": "Turf.js 地圖資料分析與視覺化"
+      }, {
+        "speaker": "Cheton Wu",
+        "image": "https://lh3.googleusercontent.com/nI6JQNmNbRviqHq1wnQOew6TQQHLQ-Li5BG842gyENgJQ7OqikaEa49BVgkvNgAXsK-qlcGGrvMlM90=w2512-h1170",
+        "topic": "用JavaScript實現微電腦自動控制不是夢！"
+      }]
+    }],
+    "daytwo": []
+  },
+  "zh_tw": ""
+}

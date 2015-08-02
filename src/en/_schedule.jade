@@ -1,13 +1,24 @@
 .schedule
   .schedules-list
     .list.day-one
-      .list-item.hour-div
-      ul.list-item
-        li.time
-        li.room-0
-        li.room-1
+      each row in en.dayone
+        .list-item.hour-div.mobile
+        ul.list-item
+          li.time= row.time
+          each agenda, index in row.agendas
+            - var single = false
+            if row.agendas.length === 1
+              - single = true
+            else
+              - single = false
+            
+            li(class="room-" + index + " " + (single ? 'single' : ''))
+              .avatar
+                img(src=agenda.image, alt=agenda.speaker)
+              .name= agenda.speaker
+              .topic= agenda.topic
     .list.day-two
-      .list-item.hour-div
+      .list-item.hour-div.mobile
       ul.list-item
         li.time
         li.room-0
