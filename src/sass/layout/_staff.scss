@@ -64,3 +64,17 @@ section.staff {
     }
   }
 }
+
+.team-page-image {
+  @include display-flex;
+  @include justify-content(center);
+  @include align-items(center);
+  background-image: url(https://unsplash.it/1280/720/?image=681&blur);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100vw;
+  height: 75vh;
+
+}

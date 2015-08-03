@@ -1,10 +1,16 @@
 .schedule
   .schedules-list
+    .day-tab
     .list.day-one
+      ul.list-item.room-nav
+        li.room-0 國際會議廳
+        li.divider
+        li.room-1 第一會議廳
       each row in en.dayone
         .list-item.hour-div.mobile
+          h1=row.time
         ul.list-item
-          li.time= row.time
+          //- li.time= row.time
           each agenda, index in row.agendas
             - var single = false
             if row.agendas.length === 1
@@ -15,9 +21,10 @@
             li(class="room-" + index + " " + (single ? 'single' : ''))
               .avatar
                 img(src=agenda.image, alt=agenda.speaker)
-              .name= agenda.speaker
-              .topic= agenda.topic
-    .list.day-two
+              .info
+                .topic= agenda.topic
+                .name= 'by ' + agenda.speaker
+    //- .list.day-two
       .list-item.hour-div.mobile
       ul.list-item
         li.time

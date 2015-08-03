@@ -1,17 +1,17 @@
 {
   "en": {
     "dayone": [{
-      "time": "0900am",
+      "time": "0900 am",
       "agendas": [{
         "speaker": "Matt",
         "image": "https://goo.gl/MX5cy3",
         "topic": "Building Single-Page Apps with Aurelia"
       }]
     }, {
-      "time": "0920am",
+      "time": "0920 am",
       "agendas": []
     }, {
-      "time": "1020am",
+      "time": "1020 am",
       "agendas": [{
         "speaker": "Kuro Hsu",
         "image": "https://lh4.googleusercontent.com/-ZWxW7RN-XrZWj4iKVELi2PaRds_iZAplO0bKpA38_DS4vWqrPPlrZdwZUOAHi22NntW81voS7CAYw4=w2512-h1170",
