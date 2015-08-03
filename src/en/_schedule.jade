@@ -22,11 +22,15 @@
               - single = false
             
             li(class="room-" + index + " " + (single ? 'single' : ''))
-              .avatar
-                img(src=agenda.image, alt=agenda.speaker)
-              .info
-                .topic= agenda.topic
-                .name= 'by ' + agenda.speaker
+              if agenda.image
+                .avatar
+                  img(src=agenda.image, alt=agenda.speaker)
+                .info
+                  .topic= agenda.topic
+                  .name= agenda.speaker ? 'by ' + agenda.speaker : ""
+              else
+                .info
+                  .no-topic= agenda.topic
     //- .list.day-two
       .list-item.hour-div.mobile
       ul.list-item

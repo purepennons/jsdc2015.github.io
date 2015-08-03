@@ -72,6 +72,7 @@
     margin-bottom: 10px;
     & > li {
       display: block;
+      width: auto;
 
       &.divider {
         width: 1px;
@@ -82,12 +83,13 @@
 
   & > li {
     @include display-flex;
+    @include justify-content(center);
     // @include align-items(center);
-    // width: 50%;
+    width: 50%;
     margin: 10px 0;
-    &.single {
-      // width: 100%;
-    }
+    // &.single {
+    //   width: auto;
+    // }
 
     & > div {
       margin: 0 10px;
@@ -104,12 +106,14 @@
         vertical-align: middle;
       }
     }
-
-    .name {
-      text-align: right;
+    .info {
+      width: 66%;
     }
-    .topic {
+    .topic, .no-topic {
       font-size: 2rem;
+    }
+    .no-topic {
+      text-align: center;
     }
   }
   .time {
