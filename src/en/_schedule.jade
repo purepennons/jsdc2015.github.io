@@ -2,7 +2,6 @@
   .schedules-list
     ul.day-tab
       li.first Day 1 (10/03)
-      li.divider
       li.second Day 2 (10/04)
     .list.day-one
       ul.list-item.room-nav
@@ -28,6 +27,10 @@
                 .info
                   .topic= agenda.topic
                   .name= agenda.speaker ? 'by ' + agenda.speaker : ""
+                  if !single && (index === 0)
+                    .room-name 國際會議廳
+                  else if !single && (index === 1)
+                    .room-name 第一會議廳
               else
                 .info
                   .no-topic= agenda.topic

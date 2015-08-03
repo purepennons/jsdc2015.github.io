@@ -22,12 +22,17 @@
 
 .day-tab {
   background-color: #fff;
-  padding: 0 40px;
+  padding: 0 20px;
   @include box-shadow(0 1px 2px 0 rgba(50, 50, 50, 0.75));
+  @include susy-breakpoint($width-medium, 12) {
+    padding: 0 40px;
+  }
   & > li {
     display: inline-block;
-    font-size: 2.5rem;
     padding: 10px;
+    @include susy-breakpoint($width-medium, 12) {
+      font-size: 2.5rem;
+    }
   }
 }
 
@@ -41,24 +46,32 @@
 
 .list-item {
   @include display-flex;
+  @include flex-direction(column);
   @include flex-wrap(wrap);
+  @include justify-content(flex-start);
   background-color: #fff;
   min-height: 100px;
   padding: 20px 0;
   margin: 0;
   @include susy-breakpoint($width-medium, 12) {
+    @include flex-direction(row);
     @include justify-content(space-around);
     margin: 0 50px;
   }
   &.hour-div {
-    @include justify-content(center);
-    @include align-items(flex-end);
+    @include justify-content(flex-end);
     background-color: #f1f1f1;
     color: #808080;
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
     margin: 5px 0;
+
+    @include susy-breakpoint($width-medium, 12) {
+      @include align-items(flex-end);
+      @include justify-content(center);
+    }
+
     & > h1 {
       margin: 0.5rem;
     }
@@ -70,6 +83,10 @@
     padding-bottom: 5px;
     margin-top:10px;
     margin-bottom: 10px;
+    display: none;
+    @include susy-breakpoint($width-medium, 12) {
+      @include display-flex;
+    }
     & > li {
       display: block;
       width: auto;
@@ -85,7 +102,13 @@
     @include display-flex;
     @include justify-content(center);
     // @include align-items(center);
-    width: 50%;
+    font-size: 1rem;
+    @include susy-breakpoint($width-ex-small, 12) {
+      font-size: 1.5rem;
+    }
+    @include susy-breakpoint($width-medium, 12) {
+      width: 50%;
+    }
     margin: 10px 0;
     // &.single {
     //   width: auto;
@@ -96,11 +119,12 @@
     }
 
     .avatar {
-      width: 10em;
-      height: 10em;
+      width: 7em;
+      height: 7em;
       overflow: hidden;
       border-radius: 50%;
-      border: 5px solid #9af;
+      border: 0.5em solid #9af;
+
       img {
         width: 100%;
         vertical-align: middle;
@@ -110,10 +134,19 @@
       width: 66%;
     }
     .topic, .no-topic {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      @include susy-breakpoint($width-ex-small, 12) {
+        font-size: 2rem;
+      }
     }
     .no-topic {
       text-align: center;
+    }
+    .room-name {
+      display: block;
+      @include susy-breakpoint($width-medium, 12) {
+        display: none;
+      };
     }
   }
   .time {
