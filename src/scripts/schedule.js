@@ -1,4 +1,10 @@
 (function () {
+  var navbarBtn = $('.navbar-btn');
+  navbarBtn.bind('click', function (event) {
+    console.log(event);
+    $('.nav-menu').toggleClass('active');
+  });
+
   var tabsList = document.querySelectorAll('.day-tab li');
   for (var i = 0; i < tabsList.length; i++) {
     tabsList[i].addEventListener('click', function (event) {
