@@ -10,16 +10,18 @@
     });
   }
 
-  var schedule = document.querySelector('.schedule');
-  var dayTab = document.querySelector('.day-tab');
+  var schedule = $('.schedule');
+  var dayTab = $('.day-tab');
 
   var scrollEvent = function (event) {
-    if ( document.body.scrollTop > schedule.offsetTop && !dayTab.classList.contains('fixed') ) {
-      dayTab.classList.add('fixed');
-    } else if ( document.body.scrollTop < schedule.offsetTop && dayTab.classList.contains('fixed') ) {
-      dayTab.classList.remove('fixed');
+    if ( $(window).scrollTop() > schedule.offset().top && !dayTab.hasClass('fixed') ) {
+      // dayTab.classList.add('fixed');
+      dayTab.addClass('fixed');
+    } else if ( $(window).scrollTop() < schedule.offset().top && dayTab.hasClass('fixed') ) {
+      // dayTab.classList.remove('fixed');
+      dayTab.removeClass('fixed');
     }
 
   };
-  window.addEventListener('scroll', scrollEvent);
+  $(window).on('scroll', scrollEvent);
 }) ();
