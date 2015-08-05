@@ -33,7 +33,7 @@
         "topic": "Transducer"
       }, {
         "speaker": "Sean Lee",
-        "image": "../images/SeanLee.webp",
+        "image": "../images/SeanLee.jpg",
         "topic": "unidisk - Architecture of Web Storage filesystem"
       }]
     }, {
@@ -54,7 +54,7 @@
       "time": "14:20",
       "agendas": [{
         "speaker": "Will 保哥",
-        "image": "../images/Will.webp",
+        "image": "../images/Will.jpg",
         "topic": "使用 Visual Studio Code 建構 JavaScript 應用程式"
       }, {
         "speaker": "Casear Chu",
@@ -76,7 +76,7 @@
         "topic": "TDD 的開發哲學，以 nodejs 為例"
       }, {
         "speaker": "王唯達",
-        "image": "../images/王唯達.webp",
+        "image": "../images/王唯達.jpg",
         "topic": "jQuery.component,一個javascript MVC"
       }]
     }, {
