@@ -30,4 +30,6 @@
 
   };
   $(window).on('scroll', scrollEvent);
+
+  var layzr = new Layzr();
 }) ();

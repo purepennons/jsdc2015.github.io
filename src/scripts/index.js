@@ -350,4 +350,6 @@ $(document).ready(function() {
     mainAudio: '/music/elevator.mp3',
     endAudio: '/music/ding.mp3'
   });
+
+  var layzr = new Layzr();
 });

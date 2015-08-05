@@ -129,7 +129,8 @@ html(lang="zh")
           each speaker in speakers
             .speaker
               .avatar
-                img(src=speaker.img.length ? speaker.img : '/images/no-avatar.jpg', alt=speaker.name)
+                //- img(src=speaker.img.length ? speaker.img : '/images/no-avatar.jpg', alt=speaker.name)
+                img(data-layzr=speaker.img.length ? speaker.img : '/images/no-avatar.jpg', alt=speaker.name)
               .introduction
                 h4.name= speaker.name
                 span.project
@@ -161,7 +162,8 @@ html(lang="zh")
           each staff in zh_tw.staff.members
             .person
               .avatar
-                img(src=staff.img.length ? staff.img : '/images/no-avatar.jpg', alt=staff.name)
+                //- img(src=staff.img.length ? staff.img : '/images/no-avatar.jpg', alt=staff.name)
+                img(data-layzr=staff.img.length ? staff.img : '/images/no-avatar.jpg', alt=staff.name)
               .introduction
                 h4= staff.name
                 span= staff.position
@@ -193,6 +195,7 @@ html(lang="zh")
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/layzr.js/1.4.3/layzr.min.js")
     script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js")
     script(src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js")
     script(src="/scripts/elevator.min.js")
