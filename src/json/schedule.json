@@ -3,9 +3,9 @@
     "dayone": [{
       "time": "09:00",
       "agendas": [{
-        "speaker": "Matt",
-        "image": "https://goo.gl/MX5cy3",
-        "topic": "Building Single-Page Apps with Aurelia"
+        "speaker": "Josh Koo",
+        "image": "../images/JoshKoo.jpeg",
+        "topic": "Tooling with Three.js"
       }]
     }, {
       "time": "09:20",
@@ -28,13 +28,13 @@
     }, {
       "time": "11:20",
       "agendas": [{
-        "speaker": "Sam Lee",
-        "image": "../images/SamLee.jpg",
-        "topic": "React Native 實戰!  融入現有 iOS App"
+        "speaker": "othree",
+        "image": "../images/othree.jpg",
+        "topic": "Transducer"
       }, {
-        "speaker": "謝宗穎",
-        "image": "../images/謝宗穎.jpeg",
-        "topic": "TDD 的開發哲學，以 nodejs 為例"
+        "speaker": "Sean Lee",
+        "image": "../images/SeanLee.webp",
+        "topic": "unidisk - Architecture of Web Storage filesystem"
       }]
     }, {
       "time": "12:00",
@@ -46,20 +46,20 @@
     }, {
       "time": "13:20",
       "agendas": [{
-        "speaker": "Josh Koo",
-        "image": "../images/JoshKoo.jpeg",
-        "topic": "Tooling with Three.js"
+        "speaker": "Matt",
+        "image": "../images/Matt.png",
+        "topic": "Building Single-Page Apps with Aurelia"
       }]
     }, {
       "time": "14:20",
       "agendas": [{
+        "speaker": "Will 保哥",
+        "image": "../images/Will.webp",
+        "topic": "使用 Visual Studio Code 建構 JavaScript 應用程式"
+      }, {
         "speaker": "Casear Chu",
         "image": "../images/CasearChu.jpg",
         "topic": "技術演進的大亂鬥"
-      }, {
-        "speaker": "Mark",
-        "image": "../images/MarkSu.jpg",
-        "topic": "Building Hybrid Mobile Apps with Ionic Framework and AngularJS"
       }]
     }, {
       "time": "15:00",
@@ -71,9 +71,9 @@
     }, {
       "time": "15:30",
       "agendas": [{
-        "speaker": "othree",
-        "image": "../images/othree.jpg",
-        "topic": "Transducer"
+        "speaker": "謝宗穎",
+        "image": "../images/謝宗穎.jpeg",
+        "topic": "TDD 的開發哲學，以 nodejs 為例"
       }, {
         "speaker": "王唯達",
         "image": "../images/王唯達.webp",
@@ -82,13 +82,13 @@
     }, {
       "time": "16:30",
       "agendas": [{
-        "speaker": "",
-        "image": "",
-        "topic": "TBD"
+        "speaker": "Paul Li",
+        "image": "../images/PaulLi.png",
+        "topic": "Web Components & the next generation ADs"
       }, {
-        "speaker": "Xp Steven",
-        "image": "../images/XpSteven.jpg",
-        "topic": "React Test and Material Design Lite + React？"
+        "speaker": "Marty",
+        "image": "../images/no-avatar.jpg",
+        "topic": "Build Anything with JavaScript"
       }]
     }, {
       "time": "17:10",
@@ -115,9 +115,9 @@
     }, {
       "time": "10:20",
       "agendas": [{
-        "speaker": "Will 保哥",
-        "image": "../images/Will.webp",
-        "topic": "使用 Visual Studio Code 建構 JavaScript 應用程式"
+        "speaker": "Sam Lee",
+        "image": "../images/SamLee.jpg",
+        "topic": "React Native 實戰!  融入現有 iOS App"
       }, {
         "speaker": "pH200",
         "image": "https://avatars1.githubusercontent.com/u/1430310?v=3&s=460",
@@ -126,13 +126,13 @@
     }, {
       "time": "11:20",
       "agendas": [{
-        "speaker": "Paul Li",
-        "image": "../images/PaulLi.png",
-        "topic": "Web Components & the next generation ADs"
+        "speaker": "Mark",
+        "image": "../images/MarkSu.jpg",
+        "topic": "Building Hybrid Mobile Apps with Ionic Framework and AngularJS"
       }, {
-        "speaker": "Sean Lee",
-        "image": "../images/SeanLee.webp",
-        "topic": "unidisk - Architecture of Web Storage filesystem"
+        "speaker": "",
+        "image": "",
+        "topic": "TBD"
       }]
     }, {
       "time": "12:00",
@@ -156,11 +156,11 @@
         "topic": "TEA TIME"
       }]
     }, {
-      "time": "15:20",
+      "time": "15:30",
       "agendas": [{
-        "speaker": "",
-        "image": "",
-        "topic": "TBD"
+        "speaker": "Xp Steven",
+        "image": "../images/XpSteven.jpg",
+        "topic": "React Test and Material Design Lite + React？"
       }, {
         "speaker": "",
         "image": "",
