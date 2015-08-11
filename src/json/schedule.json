@@ -8,14 +8,28 @@
         "topic": "Tooling with Three.js"
       }]
     }, {
-      "time": "09:20",
+      "time": "09:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "DESSERT TIME"
+      }]
+    }, {
+      "time": "10:00",
       "agendas": [{
         "speaker": "",
         "image": "",
         "topic": "TBD"
       }]
     }, {
-      "time": "10:20",
+      "time": "10:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
+      }]
+    }, {
+      "time": "11:00",
       "agendas": [{
         "speaker": "Kuro Hsu",
         "image": "../images/kuro-hsu.jpg",
@@ -26,32 +40,28 @@
         "topic": "用JavaScript實現微電腦自動控制不是夢！"
       }]
     }, {
-      "time": "11:20",
-      "agendas": [{
-        "speaker": "othree",
-        "image": "../images/othree.jpg",
-        "topic": "Transducer"
-      }, {
-        "speaker": "Sean Lee",
-        "image": "../images/SeanLee.jpg",
-        "topic": "unidisk - Architecture of Web Storage filesystem"
-      }]
-    }, {
-      "time": "12:00",
+      "time": "11:40",
       "agendas": [{
         "speaker": "",
         "image": "",
         "topic": "LUNCH"
       }]
     }, {
-      "time": "13:20",
+      "time": "12:40",
       "agendas": [{
         "speaker": "Matt",
         "image": "../images/Matt.png",
         "topic": "Building Single-Page Apps with Aurelia"
       }]
     }, {
-      "time": "14:20",
+      "time": "13:20",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
+      }]
+    }, {
+      "time": "13:30",
       "agendas": [{
         "speaker": "Will 保哥",
         "image": "../images/Will.jpg",
@@ -62,7 +72,25 @@
         "topic": "技術演進的大亂鬥"
       }]
     }, {
-      "time": "15:00",
+      "time": "14:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
+      }]
+    }, {
+      "time": "14:30",
+      "agendas": [{
+        "speaker": "othree",
+        "image": "../images/othree.jpg",
+        "topic": "Transducer"
+      }, {
+        "speaker": "Sean Lee",
+        "image": "../images/SeanLee.jpg",
+        "topic": "unidisk - Architecture of Web Storage filesystem"
+      }]
+    }, {
+      "time": "15:10",
       "agendas": [{
         "speaker": "",
         "image": "",
@@ -78,6 +106,13 @@
         "speaker": "王唯達",
         "image": "../images/王唯達.jpg",
         "topic": "jQuery.component,一個javascript MVC"
+      }]
+    }, {
+      "time": "16:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
       }]
     }, {
       "time": "16:30",
@@ -106,14 +141,28 @@
         "topic": "React Native與Mobile App開發模式"
       }]
     }, {
-      "time": "09:20",
+      "time": "09:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "DESSERT TIME"
+      }]
+    }, {
+      "time": "10:00",
       "agendas": [{
         "speaker": "",
         "image": "",
         "topic": "TBD"
       }]
     }, {
-      "time": "10:20",
+      "time": "10:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
+      }]
+    }, {
+      "time": "11:00",
       "agendas": [{
         "speaker": "Sam Lee",
         "image": "../images/SamLee.jpg",
@@ -124,7 +173,28 @@
         "topic": "Exploring Functional UIs with Cycle"
       }]
     }, {
-      "time": "11:20",
+      "time": "11:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "LUNCH"
+      }]
+    }, {
+      "time": "12:40",
+      "agendas": [{
+        "speaker": "Janathon",
+        "image": "../images/Janathon.jpeg",
+        "topic": "Workshop on Control Flow w/ ES2015 and beyond."
+      }]
+    }, {
+      "time": "14:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
+      }]
+    }, {
+      "time": "14:30",
       "agendas": [{
         "speaker": "Mark",
         "image": "../images/MarkSu.jpg",
@@ -135,21 +205,7 @@
         "topic": "TBD"
       }]
     }, {
-      "time": "12:00",
-      "agendas": [{
-        "speaker": "",
-        "image": "",
-        "topic": "LUNCH"
-      }]
-    }, {
-      "time": "13:20",
-      "agendas": [{
-        "speaker": "Janathon",
-        "image": "../images/Janathon.jpeg",
-        "topic": "Workshop on Control Flow w/ ES2015 and beyond."
-      }]
-    }, {
-      "time": "15:00",
+      "time": "15:10",
       "agendas": [{
         "speaker": "",
         "image": "",
@@ -165,6 +221,13 @@
         "speaker": "",
         "image": "",
         "topic": "TBD"
+      }]
+    }, {
+      "time": "16:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "BREAK TIME"
       }]
     }, {
       "time": "16:30",
@@ -191,14 +254,28 @@
         "topic": "Tooling with Three.js"
       }]
     }, {
-      "time": "09:20",
+      "time": "09:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "早上點心"
+      }]
+    }, {
+      "time": "10:00",
       "agendas": [{
         "speaker": "",
         "image": "",
         "topic": "TBD"
       }]
     }, {
-      "time": "10:20",
+      "time": "10:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "休息"
+      }]
+    }, {
+      "time": "11:00",
       "agendas": [{
         "speaker": "Kuro Hsu",
         "image": "../images/kuro-hsu.jpg",
@@ -209,32 +286,28 @@
         "topic": "用JavaScript實現微電腦自動控制不是夢！"
       }]
     }, {
-      "time": "11:20",
-      "agendas": [{
-        "speaker": "othree",
-        "image": "../images/othree.jpg",
-        "topic": "Transducer"
-      }, {
-        "speaker": "Sean Lee",
-        "image": "../images/SeanLee.jpg",
-        "topic": "unidisk - Architecture of Web Storage filesystem"
-      }]
-    }, {
-      "time": "12:00",
+      "time": "11:40",
       "agendas": [{
         "speaker": "",
         "image": "",
-        "topic": "LUNCH"
+        "topic": "午餐"
       }]
     }, {
-      "time": "13:20",
+      "time": "12:40",
       "agendas": [{
         "speaker": "Matt",
         "image": "../images/Matt.png",
         "topic": "Building Single-Page Apps with Aurelia"
       }]
     }, {
-      "time": "14:20",
+      "time": "13:20",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "休息"
+      }]
+    }, {
+      "time": "13:30",
       "agendas": [{
         "speaker": "Will 保哥",
         "image": "../images/Will.jpg",
@@ -245,11 +318,29 @@
         "topic": "技術演進的大亂鬥"
       }]
     }, {
-      "time": "15:00",
+      "time": "14:10",
       "agendas": [{
         "speaker": "",
         "image": "",
-        "topic": "TEA TIME"
+        "topic": "休息"
+      }]
+    }, {
+      "time": "14:30",
+      "agendas": [{
+        "speaker": "othree",
+        "image": "../images/othree.jpg",
+        "topic": "Transducer"
+      }, {
+        "speaker": "Sean Lee",
+        "image": "../images/SeanLee.jpg",
+        "topic": "unidisk - Architecture of Web Storage filesystem"
+      }]
+    }, {
+      "time": "15:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "下午茶"
       }]
     }, {
       "time": "15:30",
@@ -263,13 +354,20 @@
         "topic": "jQuery.component,一個javascript MVC"
       }]
     }, {
+      "time": "16:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "休息"
+      }]
+    }, {
       "time": "16:30",
       "agendas": [{
         "speaker": "Paul Li",
         "image": "../images/PaulLi.png",
         "topic": "Web Components & the next generation ADs"
       }, {
-        "speaker": "Marty",
+        "speaker": "許益祥",
         "image": "../images/no-avatar.jpg",
         "topic": "Build Anything with JavaScript"
       }]
@@ -278,7 +376,7 @@
       "agendas": [{
         "speaker": "",
         "image": "",
-        "topic": "END"
+        "topic": "收工啦!"
       }]
     }],
     "daytwo": [{
@@ -289,14 +387,28 @@
         "topic": "React Native與Mobile App開發模式"
       }]
     }, {
-      "time": "09:20",
+      "time": "09:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "早上點心"
+      }]
+    }, {
+      "time": "10:00",
       "agendas": [{
         "speaker": "",
         "image": "",
         "topic": "TBD"
       }]
     }, {
-      "time": "10:20",
+      "time": "10:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "休息"
+      }]
+    }, {
+      "time": "11:00",
       "agendas": [{
         "speaker": "Sam Lee",
         "image": "../images/SamLee.jpg",
@@ -307,7 +419,28 @@
         "topic": "Exploring Functional UIs with Cycle"
       }]
     }, {
-      "time": "11:20",
+      "time": "11:40",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "午餐"
+      }]
+    }, {
+      "time": "12:40",
+      "agendas": [{
+        "speaker": "Janathon",
+        "image": "../images/Janathon.jpeg",
+        "topic": "Workshop on Control Flow w/ ES2015 and beyond."
+      }]
+    }, {
+      "time": "14:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "休息"
+      }]
+    }, {
+      "time": "14:30",
       "agendas": [{
         "speaker": "Mark",
         "image": "../images/MarkSu.jpg",
@@ -318,25 +451,11 @@
         "topic": "TBD"
       }]
     }, {
-      "time": "12:00",
+      "time": "15:10",
       "agendas": [{
         "speaker": "",
         "image": "",
-        "topic": "LUNCH"
-      }]
-    }, {
-      "time": "13:20",
-      "agendas": [{
-        "speaker": "Janathon",
-        "image": "../images/Janathon.jpeg",
-        "topic": "Workshop on Control Flow w/ ES2015 and beyond."
-      }]
-    }, {
-      "time": "15:00",
-      "agendas": [{
-        "speaker": "",
-        "image": "",
-        "topic": "TEA TIME"
+        "topic": "下午茶"
       }]
     }, {
       "time": "15:30",
@@ -350,18 +469,25 @@
         "topic": "TBD"
       }]
     }, {
+      "time": "16:10",
+      "agendas": [{
+        "speaker": "",
+        "image": "",
+        "topic": "休息"
+      }]
+    }, {
       "time": "16:30",
       "agendas": [{
         "speaker": "",
         "image": "",
-        "topic": "Lighting Talk"
+        "topic": "閃電秀"
       }]
     }, {
       "time": "17:10",
       "agendas": [{
         "speaker": "",
         "image": "",
-        "topic": "END"
+        "topic": "收工啦!"
       }]
     }]
   }

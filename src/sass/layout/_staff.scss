@@ -71,12 +71,15 @@ section.staff {
   @include display-flex;
   @include justify-content(center);
   @include align-items(center);
-  background-image: url(https://unsplash.it/1280/720/?image=681&blur);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://unsplash.it/1280/720/?image=532);
   background-position: center;
   background-size: cover;
   color: #fff;
   text-transform: uppercase;
   width: 100vw;
-  height: 75vh;
-
+  height: 80vh;
+  padding-top: 3.9em;
+  h1 {
+    font-weight: bold;
+  }
 }
