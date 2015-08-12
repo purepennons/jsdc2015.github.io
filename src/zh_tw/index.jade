@@ -74,8 +74,8 @@ html(lang="zh")
                 a.nav-news 最新消息
           .block.green
             ul
-              //- li 
-                a.nav-schedule 議程
+              li 
+                a.nav-schedule(href="/zh_tw/schedule.html") 議程
               li
                 a.nav-location 活動地點
           .block.blue
@@ -143,6 +143,8 @@ html(lang="zh")
                   if speaker.projectGithub
                     a.github.link-item(href=speaker.github, target="_blank")
                       i.fa.fa-github.fa-3x
+        .links
+          a(href="/zh_tw/schedule.html") 觀看所有議程
       section.location
         .title
           h1 活動地點

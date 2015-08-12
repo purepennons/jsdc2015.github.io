@@ -73,8 +73,8 @@ html(lang="en")
                 a.nav-news News
           .block.green
             ul
-              //- li
-                a.nav-schedule Schedule
+              li
+                a.nav-schedule(href="/en/schedule.html") Schedule
               li
                 a.nav-location Location
           .block.blue
@@ -109,11 +109,13 @@ html(lang="en")
             | of the development process.
           .activity
             a.typeform-share.link.speaker(href="https://jsdc2015.typeform.com/to/JIc9v2", data-mode="1", target="_blank")
-              | Be a speaker
+              | BE A SPEAKER
             a.typeform-share.link.sponsor(href="https://jsdc2015.typeform.com/to/dgmSSy", data-mode="1", target="_blank")
-              | Be a sponsor
+              | BE A SPONSOR
+            //- a.link.agenda(href="/en/schedule.html")
+              | SEE AGENDA FOR TALKS
             a.typeform-share.link.contact(href="https://jsdc2015.typeform.com/to/Z3xnIk", data-mode="1", target="_blank")
-              | Contact us
+              | CONTACT US
           .share-buttons
             .fb-share-button(data-href="http://2015.jsdc.tw/en/", data-layout="button_count")
       section.speakers
@@ -137,6 +139,8 @@ html(lang="en")
                   if speaker.projectGithub
                     a.github.link-item(href=speaker.github, target="_blank")
                       i.fa.fa-github.fa-3x
+        .links
+          a.link(href="/en/schedule.html") SEE AGENDA FOR TALKS
       section.location
         .title
           h1 Location
